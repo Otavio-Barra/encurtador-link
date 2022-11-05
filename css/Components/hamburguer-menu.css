@@ -1,0 +1,38 @@
+@media screen and (max-width: 920px) {
+  #navMenu {
+    background: none;
+    border: none;
+    display: block;
+  }
+  #navMenu > span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: var(--gray);
+  }
+  #navMenu > span:not(:last-child) {
+    margin-bottom: 7px;
+  }
+  #navMenu,
+  #navMenu > span {
+    transition: all 0.3s ease-in-out;
+  }
+  #navMenu.active {
+    transition-delay: 0.6s;
+    transform: rotate(45deg);
+  }
+  #navMenu.active > span:nth-child(2) {
+    width: 0;
+  }
+  #navMenu.active > span:nth-child(1),
+  #navMenu.active > span:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  #navMenu.active > span:nth-child(1) {
+    transform: translateY(9px);
+  }
+  #navMenu.active > span:nth-child(3) {
+    transform: translateY(-9px) rotate(90deg);
+  }
+}

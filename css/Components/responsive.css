@@ -1,0 +1,54 @@
+@media screen and (max-width: 920px) {
+  .login {
+    display: none;
+  }
+  #navMenu,
+  .login-mobile a {
+    display: block;
+  }
+  #header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    top: 100px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: var(--dark-violet);
+    transition: 0.7s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+    font-weight: 700;
+    border-radius: 15px;
+  }
+  #nav.active-menu #menu {
+    height: 37%;
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #nav {
+    width: auto;
+  }
+  #menu a {
+    color: #fff;
+  }
+  #menu li {
+    padding: 0.8rem;
+  }
+  #menu li:nth-child(1) {
+    margin-top: 1rem;
+  }
+
+  .login-mobile a {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}

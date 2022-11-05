@@ -1,0 +1,14 @@
+.btn-sing {
+  background-color: var(--cyan);
+  width: 95%;
+  padding: 0.5rem;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.login .btn-sing {
+  width: auto;
+  padding: 0.5rem 2rem;
+}
