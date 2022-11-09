@@ -46,3 +46,33 @@
   justify-content: space-between;
   align-items: center;
 }
+
+/* section 1 */
+main {
+  padding-top: 5rem;
+  overflow: hidden;
+}
+main .home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .home .content h1 {
+  font-size: clamp(4.5vw, 5rem, 5vw);
+  line-height: 110%;
+  color: var(--Very-Dark-Blue);
+}
+main .home .content p {
+  color: var(--Grayish-Violet);
+  line-height: 160%;
+  font-size: clamp(1vw, 1.2rem, 2vw);
+  padding-right: 20%;
+  margin-bottom: 30px;
+}
+
+main .home img {
+  position: relative;
+  width: 170%;
+  right: 10%;
+}

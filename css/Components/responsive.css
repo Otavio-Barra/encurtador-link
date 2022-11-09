@@ -51,4 +51,25 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+  main {
+    padding-top: 1rem;
+  }
+  main .home {
+    flex-direction: column-reverse;
+  }
+  main .home .content {
+    text-align: center;
+  }
+  main .home .content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  main .home .content p {
+    font-size: 1rem;
+    padding: 0;
+  }
+  main .home img {
+    width: 150%;
+    right: -10%;
+  }
 }
