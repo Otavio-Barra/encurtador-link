@@ -16,9 +16,7 @@
     text-align: center;
     width: 300px;
     top: 100px;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
+    right: 10vw;
     background-color: var(--dark-violet);
     transition: 0.7s;
     z-index: 1000;
@@ -29,7 +27,7 @@
     border-radius: 15px;
   }
   #nav.active-menu #menu {
-    height: 37%;
+    height: 340px;
     visibility: visible;
     overflow-y: auto;
   }
@@ -71,5 +69,13 @@
   main .home img {
     width: 150%;
     right: -10%;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #menu {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
   }
 }
