@@ -12,3 +12,14 @@
   width: 95%;
   padding: 0.5rem;
 }
+.bg-purple .btn-blue {
+  width: 210px;
+  border-radius: 10px;
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 920px) {
+  .bg-purple .btn-blue {
+    width: 100%;
+  }
+}

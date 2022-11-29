@@ -71,6 +71,13 @@
     right: -10%;
     margin-bottom: 2rem;
   }
+
+  .bg-purple {
+    flex-direction: column;
+  }
+  .bg-purple #link {
+    margin-bottom: 15px;
+  }
 }
 @media screen and (max-width: 480px) {
   #menu {
