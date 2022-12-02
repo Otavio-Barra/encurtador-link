@@ -78,6 +78,18 @@
   .container-shorter-link #link {
     margin-bottom: 15px;
   }
+  .shorter-link .show-link {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .shorter-link .show-link .link {
+    border-bottom: 1px solid var(--Grayish-Violet);
+    margin-bottom: 1rem;
+  }
+  .shorter-link .show-link div .new-link {
+    display: block;
+  }
 }
 @media screen and (max-width: 480px) {
   #menu {
@@ -85,4 +97,7 @@
     left: 0;
     margin: 0 auto;
   }
+  /* .shorter-link .show-link .link {
+    font-size: 0.8rem;
+  } */
 }

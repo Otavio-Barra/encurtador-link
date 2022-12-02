@@ -24,7 +24,8 @@
   background-color: var(--Dark-Violet);
 }
 @media screen and (max-width: 920px) {
-  .container-shorter-link .btn-blue {
+  .container-shorter-link .btn-blue,
+  .shorter-link .show-link .btn-blue {
     width: 100%;
   }
 }

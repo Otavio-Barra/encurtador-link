@@ -118,12 +118,18 @@ main .home img {
 .shorter-link .show-link {
   background-color: rgb(255, 255, 255);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 1.2em;
   margin-bottom: 1rem;
   border-radius: 10px;
 }
+.shorter-link .show-link .link,
+.new-link {
+  font-size: clamp(1vw, 1rem, 3vw);
+}
+
 .shorter-link .show-link div .new-link {
   color: var(--cyan);
   margin-right: 1rem;
