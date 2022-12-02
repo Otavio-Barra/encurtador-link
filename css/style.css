@@ -20,7 +20,7 @@
   padding-top: 2rem;
 }
 .logo {
-  margin-top: 10px;
+  margin-top: 0.6rem;
 }
 #nav {
   width: 100%;
@@ -69,7 +69,7 @@ main .home .content p {
   line-height: 160%;
   font-size: clamp(1vw, 1.2rem, 2vw);
   padding-right: 20%;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 main .home img {
@@ -79,24 +79,59 @@ main .home img {
 }
 
 /* section 2 */
-.bg-purple {
+.shorter-link {
+  position: relative;
+  top: -60px;
+}
+.container-shorter-link {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 45px;
+  padding: 2rem;
   background-color: var(--dark-violet);
   background-image: url("../images/bg-shorten-desktop.svg");
   background-size: cover;
   background-position: top;
   border-radius: 10px;
-  position: relative;
+  margin-bottom: 25px;
 }
-
-.bg-purple #link {
+.container-shorter-link #link {
   width: 100%;
   border: none;
   outline: none;
   padding: 15px 25px;
   margin-right: 20px;
   border-radius: 10px;
+}
+.container-shorter-link #link.error-link {
+  border: 5px solid var(--Red);
+  color: var(--Red);
+}
+.container-shorter-link #link.error-link::placeholder {
+  color: var(--Red);
+}
+.error-text {
+  color: var(--Red);
+  display: none;
+}
+
+.shorter-link .show-link {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2em;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.shorter-link .show-link div .new-link {
+  color: var(--cyan);
+  margin-right: 1rem;
+}
+
+.advanced-statisitcs {
+  background-color: hsl(0, 0%, 75%);
+}
+lottie-player {
+  width: 100%;
 }

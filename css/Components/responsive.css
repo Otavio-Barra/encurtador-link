@@ -72,10 +72,10 @@
     margin-bottom: 2rem;
   }
 
-  .bg-purple {
+  .container-shorter-link {
     flex-direction: column;
   }
-  .bg-purple #link {
+  .container-shorter-link #link {
     margin-bottom: 15px;
   }
 }

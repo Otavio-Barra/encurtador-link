@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./css/Components/Variables.css" />
     <link rel="stylesheet" href="./css/Components/hamburguer-menu.css" />
     <link rel="stylesheet" href="./css/Components/button-sing.css" />
+    <link rel="stylesheet" href="./css/Components/spinner.css" />
 
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
   </head>
@@ -76,17 +77,34 @@
           />
         </div>
       </section>
-      <section class="container bg-purple">
-        <input type="text" id="link" placeholder="Shorten a link here..." />
-        <button class="btn-blue">Shorten It!</button>
+
+      <section class="advanced-statisitcs">
+        <div class="container shorter-link">
+          <form class="container-shorter-link">
+            <input type="text" id="link" placeholder="Shorten a link here..." />
+            <button class="btn-blue">Shorten It!</button>
+          </form>
+          <p class="error-text">Pleace add a link</p>
+        </div>
+
+        <div class="working container">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://assets9.lottiefiles.com/private_files/lf30_y9czxcb9.json"
+            background="transparent"
+            speed="1"
+            hover
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
       </section>
     </main>
 
     <!-- 
-  Advanced Statistics
+ 
 
-  Track how your links are performing across the web with our 
-  advanced statistics dashboard.
+  
 
   Brand Recognition
 

@@ -12,14 +12,19 @@
   width: 95%;
   padding: 0.5rem;
 }
-.bg-purple .btn-blue {
-  width: 210px;
+.container-shorter-link .btn-blue {
+  width: 9rem;
   border-radius: 10px;
   padding: 15px 0;
 }
-
+.shorter-link .show-link .btn-blue {
+  border-radius: 10px;
+}
+.shorter-link .show-link .btn-blue.copied {
+  background-color: var(--Dark-Violet);
+}
 @media screen and (max-width: 920px) {
-  .bg-purple .btn-blue {
+  .container-shorter-link .btn-blue {
     width: 100%;
   }
 }
