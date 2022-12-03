@@ -1,6 +1,9 @@
 const selector = (element) => {
   return document.querySelector(element);
 };
+const creator = (element) => {
+  return document.createElement(element);
+};
 
 const nav = selector("#nav");
 const navMenu = selector("#navMenu");
@@ -29,7 +32,6 @@ function urlValidation(defaultUrl) {
 }
 
 async function shortenURL(link) {
-  const divLinkShorte = document.createElement("div");
   const input = selector("#link");
   const errorText = selector(".error-text");
 
@@ -37,6 +39,7 @@ async function shortenURL(link) {
     if (!urlValidation(link)) {
       input.classList.add("error-link");
       errorText.style.display = "block";
+      input.value = "";
       alert("link invalido");
     } else {
       errorText.style.display = "none";
@@ -47,21 +50,20 @@ async function shortenURL(link) {
       );
       const data = await response.json();
 
-      divLinkShorte.classList.add("show-link");
+      const divShowLink = creator("div");
+      divShowLink.classList.add("show-link");
 
-      const createP = document.createElement("p");
+      const createP = creator("p");
       createP.classList.add("link");
       createP.innerText = link;
 
-      const createDiv = document.createElement("div");
-
-      const createA = document.createElement("a");
+      const createA = creator("a");
       createA.setAttribute("href", `https://shrtco.de/${data.result.code}`);
       createA.setAttribute("target", "blank");
       createA.classList.add("new-link");
       createA.innerText = `shrtco.de/${data.result.code}`;
 
-      const btnCopy = document.createElement("button");
+      const btnCopy = creator("button");
       btnCopy.classList.add("btn-blue");
       btnCopy.innerText = "Copy";
       btnCopy.addEventListener("click", () => {
@@ -72,10 +74,13 @@ async function shortenURL(link) {
         btnCopy.classList.add("copied");
       });
 
+      const createDiv = creator("div");
       createDiv.append(createA, btnCopy);
 
-      divLinkShorte.append(createP, createDiv);
-      shorterLink.append(divLinkShorte);
+      divShowLink.append(createP, createDiv);
+      shorterLink.append(divShowLink);
+
+      input.value = "";
     }
   } catch (err) {
     console.log(err);

@@ -90,11 +90,58 @@
   .shorter-link .show-link div .new-link {
     display: block;
   }
+  .advanced-statisitcs .sub-title {
+    font-size: 1.5rem;
+  }
+  .advanced-statisitcs .text-center {
+    padding: 0 5rem;
+  }
+  .cards-container {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+    text-align: center;
+  }
+  .card:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    background-color: var(--cyan);
+    width: 8px;
+    height: 100%;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+  }
+  .cards-container .card:nth-child(2),
+  .cards-container .card:nth-child(3) {
+    margin-top: 0rem;
+  }
+  .cards-container .card h4 {
+    color: var(--Very-Dark-Violet);
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .cards-container .card p {
+    color: var(--Grayish-Violet);
+    line-height: 160%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .advanced-statisitcs .text-center {
+    padding: 0rem;
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 480px) {
   #menu {
     right: 0;
     left: 0;
     margin: 0 auto;
+  }
+  .cards-container .card p {
+    color: var(--Grayish-Violet);
+    line-height: 160%;
+    font-size: 0.8rem;
   }
 }

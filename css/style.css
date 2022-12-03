@@ -114,7 +114,6 @@ main .home img {
   color: var(--Red);
   display: none;
 }
-
 .shorter-link .show-link {
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -129,7 +128,6 @@ main .home img {
 .new-link {
   font-size: clamp(1vw, 1rem, 3vw);
 }
-
 .shorter-link .show-link div .new-link {
   color: var(--cyan);
   margin-right: 1rem;
@@ -137,6 +135,73 @@ main .home img {
 
 .advanced-statisitcs {
   background-color: hsl(0, 0%, 75%);
+  padding-bottom: 5rem;
+}
+.advanced-statisitcs .sub-title {
+  font-weight: 700;
+  color: var(--Very-Dark-Violet);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.advanced-statisitcs .text-center {
+  color: var(--Grayish-Violet);
+  line-height: 160%;
+  text-align: center;
+  padding: 0 30%;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  margin-top: 4rem;
+  align-items: start;
+}
+
+.card:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  background-color: var(--cyan);
+  width: 8px;
+  top: 100px;
+  right: -23px;
+  left: auto;
+  transform: rotateZ(90deg);
+  height: 36px;
+}
+.cards-container .card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.8rem;
+  position: relative;
+}
+.cards-container .card:nth-child(2) {
+  margin-top: 2rem;
+}
+.cards-container .card:nth-child(3) {
+  margin-top: 4rem;
+}
+.cards-container .card .bg-img {
+  display: flex;
+  background-color: var(--dark-violet);
+  position: absolute;
+  top: -2.5rem;
+  padding: 1rem;
+  border-radius: 100%;
+}
+.cards-container .card h4 {
+  color: var(--Very-Dark-Violet);
+  font-size: min(1.7vw, 1.4rem);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.cards-container .card p {
+  color: var(--Grayish-Violet);
+  line-height: 160%;
+  font-size: min(1.4vw, 1rem);
 }
 lottie-player {
   width: 100%;
