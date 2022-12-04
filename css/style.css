@@ -137,7 +137,7 @@ main .home img {
   background-color: hsl(0, 0%, 75%);
   padding-bottom: 5rem;
 }
-.advanced-statisitcs .sub-title {
+.sub-title {
   font-weight: 700;
   color: var(--Very-Dark-Violet);
   text-align: center;
@@ -203,6 +203,44 @@ main .home img {
   line-height: 160%;
   font-size: min(1.4vw, 1rem);
 }
-lottie-player {
-  width: 100%;
+.boost-section {
+  padding: 4rem 0;
+  background-color: var(--dark-violet);
+  background-image: url(../images/bg-boost-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.boost-section .sub-title {
+  color: #fff;
+}
+
+footer {
+  background-color: var(--Very-Dark-Violet);
+  padding: 4rem 0;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  line-height: 180%;
+  color: #fff;
+}
+footer nav a {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+footer .social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer .social-links img:hover {
+  color: var(--cyan);
 }

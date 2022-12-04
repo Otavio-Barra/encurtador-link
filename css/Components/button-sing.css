@@ -6,6 +6,10 @@
   border-radius: 25px;
   padding: 0.5rem 2rem;
   cursor: pointer;
+  transition: 0.4s;
+}
+.btn-blue:hover {
+  filter: brightness(1.2);
 }
 
 .login-mobile .btn-blue {
